@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
+  <Object type="grid" schemaVersion="9437" VCSUid="81ba48441313a9483bb3f08c0bc69892" name="AWS" path="/">
+    <Body>
+      <Grid type="ct" xmlns="http://www.soasta.com/services/repository">
+        <Locations>
+          <Location>
+            <LocationRef>0</LocationRef>
+            <CloudProviderAccountRef>4</CloudProviderAccountRef>
+            <Maestro>
+              <ActualInstances>2</ActualInstances>
+              <Formula>
+                <Instances>2</Instances>
+                <ReserveInstances unit="absolute">0</ReserveInstances>
+              </Formula>
+              <ServerClassRef>2</ServerClassRef>
+            </Maestro>
+            <Results>
+              <ActualInstances>1</ActualInstances>
+              <Formula>
+                <Instances>
+                  <MaestroRatio>50</MaestroRatio>
+                </Instances>
+                <ReserveInstances unit="absolute">0</ReserveInstances>
+              </Formula>
+              <ServerClassRef>3</ServerClassRef>
+            </Results>
+            <ZoneDistributionType>NONE</ZoneDistributionType>
+            <Zone />
+            <AllowZoneFailover>true</AllowZoneFailover>
+            <PendingTimeout>300</PendingTimeout>
+            <UseReservedIpAddresses>false</UseReservedIpAddresses>
+            <SecurityGroup />
+            <Network />
+            <UseSpotInstances>true</UseSpotInstances>
+          </Location>
+        </Locations>
+        <LaunchSettings>
+          <AllocationBlockSize>25</AllocationBlockSize>
+          <AutomaticallyCheckServers>true</AutomaticallyCheckServers>
+          <AllowExtraLargeServers>true</AllowExtraLargeServers>
+          <AllocateMaxRetries>5</AllocateMaxRetries>
+          <AllocateRetryDelay>30000</AllocateRetryDelay>
+          <CheckServerMaxRetries>10</CheckServerMaxRetries>
+          <CheckServerRetryDelay>30000</CheckServerRetryDelay>
+          <AutomaticallyMonitorServers>true</AutomaticallyMonitorServers>
+          <AutomaticallyDeleteMonitors>true</AutomaticallyDeleteMonitors>
+        </LaunchSettings>
+      </Grid>
+    </Body>
+    <BinaryData />
+    <Description></Description>
+    <Attributes>
+      <Attribute name="instanceId">
+        <Value null="true" />
+      </Attribute>
+    </Attributes>
+    <References>
+      <Reference id="1" internalID="0" name="Amazon EC2 US East" type="serverlocation" />
+      <Reference id="1" internalID="2" name="EC2 Test Server (Large)" type="serverclass" />
+      <Reference id="22" internalID="3" name="EC2 Results Server (Large)" type="serverclass" />
+      <Reference id="9161" internalID="4" name="PE.AWS" type="cloudprovideraccount" />
+    </References>
+  </Object>
+</rp:ObjectSet>
